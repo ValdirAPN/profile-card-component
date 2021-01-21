@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    color: var(--dark-blue);
+
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card {
+    height: 325px;
+    max-width: 305px;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    padding-bottom: 1.8em;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 0px 24px 40px 8px rgba(75, 75, 75, 0.2);
+}
+
+.details {
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.4em;
+    border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+    width: 100%;
+}
+
+.details__img {
+    width: 92px;
+    border-radius: 50%;
+    border: 6px solid white;
+    margin-bottom: 1.2em;
+    z-index: 1;
+}
+
+.details__name {
+    font-size: 1.1rem;
+    margin-bottom: 0.7em;
+}
+
+.details__age {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    margin-left: 0.3em;
+}
+
+.details__location {
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    color: var(--dark-grayish-blue);
+}
+
+.socials {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1.3em;
+}
+
+.socials__number {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.4em;
+}
+
+.socials__title {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    color: var(--dark-grayish-blue);
+}
+
+.svg {
+    position: absolute;
+}
+
+.svg__card {
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.top {
+    top: -52%;
+    transform: rotate(130deg);
+    z-index: -1;
+}
+
+.bottom {
+    bottom: -56%;
+    right: -10%;
+    transform: rotate(-108deg);
+    z-index: -1;
+}
